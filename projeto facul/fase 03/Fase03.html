@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css03.css">
+  </head>
+  <body>
+    <header>
+        <div>
+          <div class="photo-gallery">
+
+            <div class="main-photo">                                       
+    <img id="highlightedPhoto" src="Eu.jpeg" alt="Foto de perfil destacada">
+      </div>
+
+            <div class="thumbnail-container">
+                <img src="/fase 03/foto02.jpeg" alt="Foto 2" onclick="changePhoto('/foto02.jpeg')">
+                <img src="/fase 03/foto03.jpeg" alt="Foto 3" onclick="changePhoto('/foto03.jpeg')">
+
+            </div
+
+        </div
+<h1>Gabriel Marques Vieira Rosa</h1>
+<h2>Auxiliar Tecnico</h2>
+    </header>
+    <main>
+        <section="form-uc">
+            <h3>Curso</h3>
+            <p>Analise e Desenvolvimento de Sistemas, 4 semestre</p>
+            <p>RA:32317723</p>
+            <p>UCS cursadas: Ambientes computacionais e conectividade,
+                Gestão e qualidade de software,
+                Modelagem de software,
+                Modelos, métodos e técnicas da engenharia de software,
+                Programação de soluções computacionais,
+                Sistemas computacionais e segurança,
+                Vida & Carreira.</p>
+                <input type="text" id="nomeUC" placeholder="Nome da UC">
+                <button onclick="adicionarUC()">Adicionar UC</button
+        </section>
+        
+        
+        <section>
+            <h3>Dados</h3>
+            <p>Email:gmarquesrosa@hotmail.com</p>
+            <p>Endereco:Rua Porto 943, BLC D Apto 202</p>
+        </section>
+        <section id="perfil-pessoal">
+            <h3>Sobre Mim</h3>
+            <p>Prazer, meu nome é Gabriel Rosa, tenho 29 anos, sou casado e tenho 5 animais, 3 cães e 2 gatos. Ainda não me decidi sobre minha área de atuação, mas estudo principalmente 3: Desenvolvimento Backend, Análise de Dados ou QA. Atualmente, estou em treinamento para trabalhar na área de infraestrutura. Sou apaixonado por futebol, gosto de assistir e jogar, e torço para o único time grande do estado. No meu tempo livre, divido-me entre assistir filmes ou jogar videogame (principalmente EAFC, antigo FIFA)
+                 </p>
+                 <p>Atualmente, estou em treinamento para trabalhar na JBI Technology como Auxiliar Técnico de Campo. Antes, estava trabalhando como Uber Moto. Trabalhei de 03/22 a 03/24 como Auxiliar de Escritório na Scanlab Diagnóstica. Trabalho desde os meus 16 anos, logo, tenho uma boa experiência profissional. Já atuei em fast food, supermercado, posto de gasolina, telemarketing e fui estagiário da prefeitura, trabalhando em uma escola na secretaria.
+                 </p>
+                 <input type="text" id="inputDescricao" placeholder="Atualizar descrição">
+        <button onclick="atualizarDescricao()">Atualizar</button>
+        </section>
+        <section id="form-validacoes">
+          <h2>Validações</h2>
+          <form>
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" onblur="validarCPF()" placeholder="ddd.ddd.ddd-dd">
+              <span id="cpfErro" class="erro"></span>
+  
+              <label for="email">Email:</label>
+              <input type="text" id="email" onblur="validarEmail()" placeholder="exemplo@dominio.com">
+              <span id="emailErro" class="erro"></span>
+          </form>
+      </section>
+        
+ <footer>
+   
+    <a href="https://github.com/Grosa14" target="_blank">
+     <p>GitHub</p>
+    </a>
+    <a href="https://www.linkedin.com/in/gabriel-rosa-646329116/" target="_blank">
+        <p>Linkedln</p>
+       </a>
+       
+ </footer>
+    
+
+    </main>
+    <script src="js.js"></script>
+  </body>
+</html>
